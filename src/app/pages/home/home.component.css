@@ -52,7 +52,11 @@
   
  */
 
-
+.hero-main h1{
+  font-family: "Cairo", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+}
 
 
   /* Carousel Navigation */
