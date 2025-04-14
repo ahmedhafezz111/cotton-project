@@ -1,0 +1,19 @@
+.active{
+    color: #2b3c4f;
+    padding: 2px 12px 4px 12px;
+    background-color:#c5d2de ;
+    border-radius: 8px;
+}
+
+.nav-icons::after{
+    content: "";
+    display: inline-block;
+    background-color:#2b3c4f ;
+    color:  #2b3c4f;
+    width: 1px;
+    height: 18px;
+    margin: 0 6px;
+}
+.nav-icons:last-child::after {
+    content: none;
+}

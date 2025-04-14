@@ -1,0 +1,140 @@
+.hero-main{
+    width: 100%;
+    min-height: 50vh;
+    background-image: url(/images/Hero_Section_Image.png);
+    background-size: cover;
+    background-position: right;
+    opacity: 90%;
+}
+
+.card {
+    box-shadow: 
+        41px 44px 23px 3px rgb(216, 224, 230), 
+        inset 10px 10px 15px rgba(250, 250, 250, 0.5); 
+    background: linear-gradient(174deg, rgba(216, 224, 235, 1) 0%, rgba(197, 210, 222, 1) 100%);
+    border-radius: 24px; 
+}
+
+.rev-card{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.bg-indigo{
+    background: rgba(179, 200, 208, 0.35);
+}
+
+/* Add this to your styles */
+/* .owl-theme .owl-dots {
+    margin-top: 30px !important;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+  }
+  
+  .owl-theme .owl-dots .owl-dot span {
+    width: 12px !important;
+    height: 12px !important;
+    margin: 5px 7px !important;
+    background: #d6d6d6 !important;
+    display: block;
+    transition: opacity 200ms ease;
+    border-radius: 50%;
+  }
+  
+  .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: #2b3c4f !important;
+  }
+  
+ */
+
+
+
+
+  /* Carousel Navigation */
+.owl-carousel .owl-nav {
+  display: block !important;
+  position: absolute;
+  top: 50%;
+  width: calc(100% + 100px);
+  left: -50px;
+  transform: translateY(-50%);
+}
+
+.owl-carousel .owl-prev,
+.owl-carousel .owl-next {
+  position: absolute;
+  background: white !important;
+  padding: 12px !important;
+  border-radius: 50% !important;
+  border: 2px solid #2b3c4f !important;
+  width: 45px;
+  height: 45px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.owl-carousel .owl-prev:hover,
+.owl-carousel .owl-next:hover {
+  background: #2b3c4f !important;
+  color: white !important;
+}
+
+.owl-carousel .owl-prev {
+  left: 0;
+}
+
+.owl-carousel .owl-next {
+  right: 0;
+}
+
+/* Dots Styling */
+.owl-carousel .owl-dots {
+  display: flex !important;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: #c1c1c1;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  transition: all 0.3s;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #2b3c4f;
+  transform: scale(1.3);
+}
+
+/* RTL Adjustments */
+[dir="rtl"] .owl-carousel .owl-nav {
+  left: auto;
+  right: -50px;
+}
+
+[dir="rtl"] .owl-carousel .owl-prev {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .owl-carousel .owl-next {
+  right: auto;
+  left: 0;
+}
+
+/* Card Hover Effect */
+.rev-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rev-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
